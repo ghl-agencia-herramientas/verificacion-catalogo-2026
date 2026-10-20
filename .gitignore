@@ -1,0 +1,5 @@
+# Solo se publica docs/. Los scripts, el PDF de origen y la lista de hoteles con sus códigos quedan en local.
+/*
+!/docs
+!/README.md
+!/.gitignore
