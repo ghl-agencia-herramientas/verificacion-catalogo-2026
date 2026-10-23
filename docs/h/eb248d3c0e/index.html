@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <title>Verificación del catálogo · Sheraton Guayaquil Hotel</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <img class="logo" src="../../assets/logo-ghl.png" alt="GHL Hoteles. Transformando la hotelería en Latinoamérica desde 1964">
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <p class="eyebrow">Catálogo GHL Hoteles 2026</p>
+      <h1>Sheraton Guayaquil Hotel</h1>
+      <p class="lead">Revise la página de su hotel en el catálogo y responda el formulario para confirmar si la información es correcta o necesita actualizarse. Le tomará pocos minutos.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="pagina">
+        <button type="button" class="pagina-img" aria-label="Ampliar la página 1 del catálogo"><img src="pagina.jpg" alt="Página 1 de Sheraton Guayaquil Hotel en el catálogo GHL Hoteles 2026"><span class="lupa">Ampliar</span></button>
+        <p class="pagina-pie"><a href="pagina.pdf" target="_blank" rel="noopener">Abrir en PDF</a></p>
+      </aside>
+
+      <section class="formulario">
+        <p class="aviso-hotel">En la pregunta «Nombre completo del hotel» escriba: <strong>Sheraton Guayaquil Hotel</strong>.</p>
+        <iframe class="embed" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=h2mGYi8UHk6wuipGsJwsQMbtwJ7XkYpIig73xfb8McNUNVE4NTRKUThOM1FTOEZJNzBJNlZDSFo1WS4u&amp;embed=true" title="Formulario de confirmación de información" style="height:1500px" allowfullscreen></iframe>
+        <p class="pagina-pie"><a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=h2mGYi8UHk6wuipGsJwsQMbtwJ7XkYpIig73xfb8McNUNVE4NTRKUThOM1FTOEZJNzBJNlZDSFo1WS4u" target="_blank" rel="noopener">¿Se ve incómodo? Abra el formulario en una pestaña nueva</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap pie">Elaborado por: Agencia Digital · Dirección de Mercadeo · Oficina Central GHL · Octubre 2026</footer>
+
+  <div class="visor" id="visor" hidden>
+    <button type="button" class="visor-cerrar" id="cerrar" aria-label="Cerrar">Cerrar ✕</button>
+    <img src="pagina.jpg" alt="Página 1 de Sheraton Guayaquil Hotel ampliada">
+  </div>
+
+  <script>
+    (function () {
+      var v = document.getElementById("visor");
+      document.querySelectorAll(".pagina-img").forEach(function (b) {
+        b.addEventListener("click", function () { v.hidden = false; v.scrollTop = 0; });
+      });
+      v.addEventListener("click", function () { v.hidden = true; });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape") v.hidden = true; });
+    })();
+  </script>
+</body>
+</html>

@@ -51,6 +51,9 @@ h2 { font-size: 20px; }
   font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 999px;
 }
 .pagina-pie { margin: 8px 2px 0; font-size: 14px; }
+.pagina-img + .pagina-img { margin-top: 12px; }
+@media (min-width: 900px) { .pagina.larga { position: static; } }
+.visor img + img { margin-top: 12px; }
 a { color: var(--sea); }
 
 .seccion { margin: 0 0 28px; }
