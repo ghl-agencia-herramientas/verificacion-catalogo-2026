@@ -127,3 +127,47 @@ input:focus-visible, textarea:focus-visible, .op input:focus-visible + span, but
   color: var(--ocean); background: #fff; border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer;
 }
 [hidden] { display: none !important; }
+
+/* ---- Catálogo hojeable con buscador (página única) ---- */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.buscador { margin: 8px 0 32px; }
+.buscador h2, .trabajo > h2 { margin-bottom: 12px; }
+#q {
+  display: block; width: 100%; max-width: 560px; font: inherit; color: var(--text); background: #fff;
+  border: 1px solid var(--blood); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;
+}
+.sin-resultados { margin: 0 0 12px; color: var(--ocean); font-weight: 600; }
+.pais { border-top: 1px solid var(--grey-light); padding: 2px 0; }
+.pais:last-child { border-bottom: 1px solid var(--grey-light); }
+.pais summary { cursor: pointer; font-weight: 600; color: var(--ocean); padding: 10px 0; }
+.pais .n { margin-left: 8px; color: var(--gray); font-weight: 400; font-size: 14px; }
+.hoteles { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 0 14px; }
+.hoteles button {
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--ocean); background: #fff;
+  border: 1px solid var(--blood); border-radius: 999px; padding: 8px 14px; cursor: pointer; text-align: left;
+}
+.hoteles button:hover, .hoteles button.sel { background: var(--ocean); border-color: var(--ocean); color: #fff; }
+.hoteles button.sel::before { content: "✓ "; }
+.hoteles button[hidden], .pais[hidden] { display: none; }
+
+.trabajo { padding-bottom: 8px; }
+.barra { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+.barra button {
+  font: inherit; font-weight: 700; font-size: 15px; color: #fff; background: var(--ocean);
+  border: 0; border-radius: 8px; padding: 9px 14px; cursor: pointer;
+}
+.barra button:hover { background: var(--sea); }
+.barra button[disabled] { background: var(--grey-light); color: var(--gray); cursor: default; }
+.pagina-info { color: var(--gray); font-size: 14px; text-align: center; }
+.esta-pagina {
+  margin: 0 0 10px; padding: 10px 14px; background: var(--bg-soft); border: 1px solid var(--blood);
+  border-radius: 8px; color: var(--ocean); font-size: 15px;
+}
+.esta-pagina button, .aviso-hotel .copiar {
+  font: inherit; font-weight: 700; font-size: 14px; color: #fff; background: var(--ocean);
+  border: 0; border-radius: 999px; padding: 5px 12px; margin-left: 4px; cursor: pointer;
+}
+.vacio {
+  padding: 40px 20px; border: 1px dashed var(--blood); border-radius: 8px; background: var(--bg-soft);
+  color: var(--ocean); text-align: center; font-weight: 600;
+}
