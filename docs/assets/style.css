@@ -132,23 +132,12 @@ input:focus-visible, textarea:focus-visible, .op input:focus-visible + span, but
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .buscador { margin: 8px 0 32px; }
 .buscador h2, .trabajo > h2 { margin-bottom: 12px; }
-#q {
-  display: block; width: 100%; max-width: 560px; font: inherit; color: var(--text); background: #fff;
-  border: 1px solid var(--blood); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;
+#hotel {
+  display: block; width: 100%; max-width: 560px; min-height: 48px; font: inherit; color: var(--ocean); background: #fff;
+  border: 1px solid var(--blood); border-radius: 8px; padding: 10px 12px; cursor: pointer;
 }
-.sin-resultados { margin: 0 0 12px; color: var(--ocean); font-weight: 600; }
-.pais { border-top: 1px solid var(--grey-light); padding: 2px 0; }
-.pais:last-child { border-bottom: 1px solid var(--grey-light); }
-.pais summary { cursor: pointer; font-weight: 600; color: var(--ocean); padding: 10px 0; }
-.pais .n { margin-left: 8px; color: var(--gray); font-weight: 400; font-size: 14px; }
-.hoteles { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 0 14px; }
-.hoteles button {
-  font: inherit; font-size: 15px; font-weight: 600; color: var(--ocean); background: #fff;
-  border: 1px solid var(--blood); border-radius: 999px; padding: 8px 14px; cursor: pointer; text-align: left;
-}
-.hoteles button:hover, .hoteles button.sel { background: var(--ocean); border-color: var(--ocean); color: #fff; }
-.hoteles button.sel::before { content: "✓ "; }
-.hoteles button[hidden], .pais[hidden] { display: none; }
+#hotel optgroup { font-weight: 700; color: var(--ocean); }
+#hotel option { font-weight: 400; color: var(--text); }
 
 .trabajo { padding-bottom: 8px; }
 .barra { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
